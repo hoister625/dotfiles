@@ -60,6 +60,8 @@ mkcd () {
   mkdir "$1"
   cd "$1"
 }
+
+hash -d p="{$HOME/work/projects}"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
