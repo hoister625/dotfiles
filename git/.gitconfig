@@ -1,0 +1,17 @@
+[user]
+	email = Pesyakov.I@ostec-group.ru
+	name = Ilya Pesyakov
+[push]
+	default = matching
+[core]
+	editor = vim
+	autocrlf = input
+	safecrlf = true
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[alias]
+	d = difftool
+[merge]
+	tool = vimdiff
