@@ -144,7 +144,7 @@ bindsym $mod+Shift+0 move container to workspace $workspace10
 
 assign [class="^URxvt$" instance="^cmus$"] $workspace9
 assign [class="^URxvt$" instance="^vim$"] $workspace2
-assign [class="^URxvt$ instance=^dev$"] $workspace1
+assign [class="^URxvt$" instance="^dev$"] $workspace1
 assign [class="^Google-chrome$"] $workspace3
 assign [class="^Evolution$"] $workspace10
 assign [class="^Transmission-gtk$"] $workspace5
@@ -217,6 +217,10 @@ bindsym $mod+minus exec --no-startup-id pactl set-sink-volume 1 -5% #decrease so
 bindsym $mod+period exec --no-startup-id cmus-remote --next
 bindsym $mod+comma exec --no-startup-id cmus-remote --prev
 bindsym $mod+p exec --no-startup-id cmus-remote --pause
+
+# key indecators
+bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
+bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 
 exec_always xrandr --output HDMI2 --off --output HDMI1 --off --output DP1 --primary --mode 1920x1200 --pos 1366x0 --rotate normal --output eDP1 --mode 1366x768 --pos 0x0 --rotate normal --output VIRTUAL1 --off
 exec_always  compton --config /home/pesyakovi/.compton
