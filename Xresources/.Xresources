@@ -65,3 +65,5 @@ URxvt.depth: 24
 URxvt.url-launcher: /usr/bin/google-chrome
 URxvt.matcher.button: 1
 URxvt.perl-ext-common: default,matcher,vtwheel
+URxvt.transparent:   true
+URxvt.shading:       20
