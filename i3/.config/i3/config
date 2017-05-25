@@ -218,6 +218,9 @@ bindsym $mod+period exec --no-startup-id cmus-remote --next
 bindsym $mod+comma exec --no-startup-id cmus-remote --prev
 bindsym $mod+p exec --no-startup-id cmus-remote --pause
 
+# screenshot
+bindsym $mod+Insert exec scrot -u -e 'mv $f ~/Изображения/shots/' --release
+
 # key indecators
 bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
 bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
