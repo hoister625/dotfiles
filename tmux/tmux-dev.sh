@@ -1,5 +1,5 @@
 #!/bin/sh
-sleep 1
+sleep 2
 tmux new-session -d 'dev'
 tmux split-window -h
 tmux split-window -v -t {next}
