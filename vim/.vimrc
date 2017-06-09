@@ -78,7 +78,6 @@ Plug 'altercation/vim-colors-solarized'
 
 " html
 "" HTML Bundle
-Plug 'amirh/HTML-AutoCloseTag'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'gorodinskiy/vim-coloresque'
 Plug 'tpope/vim-haml'
