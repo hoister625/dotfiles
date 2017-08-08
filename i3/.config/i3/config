@@ -112,7 +112,7 @@ set $workspace3 "3: "
 # misc
 set $workspace4 "4: ?"
 # transmission
-set $workspace5 "5: "
+set $workspace5 "5: "
 # music
 set $workspace9 "9: "
 # mail

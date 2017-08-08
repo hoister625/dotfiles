@@ -46,6 +46,11 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'Valloric/YouCompleteMe'
 Plug 'scrooloose/syntastic'
 
+" Latex settings
+Plug 'vim-latex/vim-latex'
+let g:Tex_DefaultTargetFormat = 'pdf'
+let g:Tex_MultipleCompileFormats='pdf, aux'
+
 let g:make = 'gmake'
 if exists('make')
     let g:make = 'make'
@@ -160,7 +165,13 @@ if has('persistent_undo')      "check if your vim version supports it
     set undodir=$HOME/.vim/undo  "directory where the undo files will be stored
 endif
 
-"*****************************************************************************
+" Spell check
+setlocal spell spelllang=en_us,ru_ru
+set keymap=russian-jcukenwin
+set iminsert=0
+set imsearch=0
+highlight lCursor guifg=NONE guibg=Cyan
+""*****************************************************************************
 "" Visual Settings
 "*****************************************************************************
 syntax on
