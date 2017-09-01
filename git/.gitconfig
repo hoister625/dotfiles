@@ -5,8 +5,8 @@
 	default = matching
 [core]
 	editor = vim
-	autocrlf = input
-	safecrlf = true
+	autocrlf = false
+	safecrlf = false
 [diff]
 	tool = vimdiff
 [difftool]
